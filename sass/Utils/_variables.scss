@@ -25,6 +25,7 @@ $margin-top-bottom-big : 2.5rem 0rem;
 $margin-top-big : 2.5rem 0rem 0rem 0rem;
 $margin-top-light : 0.8rem 0rem 0rem 0rem;
 $margin-top-ultralight : 0.4rem 0rem 0rem 0rem;
+$margin-top-bottom-ultralight : 0.4rem 0rem;
 $margin-bottom-big : 0rem 0rem 2.5rem 0rem;
 $margin-negative-left : 0rem 0rem 0rem -1rem;
 $margin-title :  1.6rem 2rem;
@@ -39,11 +40,13 @@ $icon-size :1.5rem;
 $padding-light : 1.1rem;
 $pading-left-right : 0rem 1rem 0rem 1rem;
 $pading-left : 0rem 0rem 0rem 0.5rem;
+$pading-right : 0rem 0.5rem 0rem 0rem;
 $pading-left-big : 0rem 0rem 0rem 2rem;
 $pading-top-bottom : 1rem 0rem 1rem 0rem;
 $pading-heart : 10rem 3rem 0rem 0rem;
 $pading-heart-menu :0rem 0rem 0rem 18rem;
 $padding-new : 0.6rem 2rem;
+$padding-check : 2rem 1rem;
 $height-card : 200px;   
     //locator
     
@@ -59,6 +62,7 @@ $height-card : 200px;
 //decorators
 
 $border-button-radius : 2.5rem;
+$border-menu-title : 0rem 0rem 0.2rem 0rem;
 $botton-shadow : 1px  1.5px 5px  lighten($color: black, $amount: 60);
 $botton-shadow-hover : 2px 3px 10px  lighten($color: black, $amount: 60);
 
