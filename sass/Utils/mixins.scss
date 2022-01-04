@@ -20,15 +20,28 @@
 @mixin h4-format {
     font-size: $h4-size;
     font-weight: 100;
+}@mixin h5-format {
+    font-family: Shrikhand;
+    font-size: $h5-size;
+    font-weight:bold;
+    padding: $pading-left-big;
 }
 @mixin header-format {
-    font-family: Shrikhand;
-    font-size: $header-font-size;
     display: flex;
     justify-content: center;
     margin: $margin-top-bottom-ligth;
+    :first-child{
+        width: 40%;
+    }
 }
-
+@mixin header-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    :nth-child(2){
+        font-size: $icon-size;
+    }  
+}
 @mixin locator-format {
     display: flex;
     flex-direction: row;
@@ -121,4 +134,61 @@
     width: 80%;
     box-shadow: $botton-shadow;
     margin: $margin-top-bottom-ligth;
+}
+@mixin restaurant-card-image {    
+    height: 66%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+@mixin restaurant-card-title {    
+    margin: $margin-top-light;
+    align-self: flex-start;
+    padding: $pading-left;
+}
+@mixin restaurant-card-city {
+    margin: $margin-top-ultralight;
+    align-self: flex-start;
+    padding: $pading-left;
+}
+@mixin restaurant-card-icon {
+    position: absolute;
+    align-self:flex-end;
+    font-size: $icon-size;
+    padding: $pading-heart;
+}
+@mixin restaurant-card-new {
+    position: absolute;
+    align-self: flex-end;
+    border-style: none;
+    border-radius: 5px;
+    background: $color-tertiary;
+    padding: $padding-new;
+    margin: $margin-right;
+    color: $color-tertiary-darken;
+}
+@mixin menu-image {
+    object-fit: cover;
+    width: 100%;
+}
+@mixin menu-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-style: none;
+    width: $all-width;
+    background: $color-grey-background;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;    
+    margin: $margin-menu-container;
+}
+@mixin menu-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin menu-icon {
+    font-size: $icon-size;
+    margin: $margin-left-heart;
 }

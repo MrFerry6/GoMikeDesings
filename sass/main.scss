@@ -24,10 +24,15 @@ h3{
 h4{
     @include h4-format;
 }
-header{
-   @include header-format;
+h5{
+    @include h5-format;
 }
-
+header{
+   @include header-format;   
+}
+.header-menu{
+    @include header-menu;
+}
 .search-container{
     @include Search-format;
 }
@@ -91,39 +96,34 @@ header{
         box-shadow: $botton-shadow-hover;
     }
     &__image{
-        height: 66%;
-        object-fit: cover;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+       @include restaurant-card-image;
     }
     &__title{
-        margin: $margin-top-light;
-        align-self: flex-start;
-        padding: $pading-left;
+        @include restaurant-card-title;
     }
     &__city{
-        margin: $margin-top-ultralight;
-        align-self: flex-start;
-        padding: $pading-left;
+        @include restaurant-card-city;
     }
     &__icon{
-        position: absolute;
-        align-self:flex-end;
-        font-size: $heart-icon-size;
-        padding: $pading-heart;
+        @include restaurant-card-icon;
     }
     &__new{
-        position: absolute;
-        align-self: flex-end;
-        border-style: none;
-        border-radius: 5px;
-        background: $color-tertiary;
-        padding: $padding-new;
-        margin: $margin-right;
-        color: $color-tertiary-darken;
+        @include restaurant-card-new;
     }
 }
 
+.menu-image{
+    @include menu-image;
+}
+.menu-container{
+    @include menu-container;
+}
+.menu-title-container{
+    @include menu-title-container;
+    &__menu-icon{
+        @include menu-icon;
+    }
+}
 @media (min-width: 768px) {
    
 }
