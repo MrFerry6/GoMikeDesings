@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 h1 {
   font-size: 1.5rem;
   font-weight: 900;
@@ -17,6 +25,11 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 0.9rem;
   font-weight: 100;
 }
 
@@ -118,7 +131,6 @@ header {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0.8rem 0rem;
-  padding: 0rem 1rem 0rem 1rem;
 }
 
 .how-works-title {
@@ -139,7 +151,7 @@ header {
   border-style: none;
   -ms-flex-item-align: center;
       align-self: center;
-  width: 80%;
+  width: 75%;
   margin: 0.8rem 0rem;
   border-radius: 25px;
   background: #f2f2f2;
@@ -161,6 +173,99 @@ header {
 .how-works-element__icon {
   padding: 0rem 1rem 0rem 1rem;
   color: #595959;
+}
+
+.how-works-element:hover {
+  background: #f2eafb;
+}
+
+.how-works-element:hover :nth-child(2) {
+  color: #9356DC;
+}
+
+.restaurants-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #f2f2f2;
+  margin: 2.5rem 0rem 0rem 0rem;
+}
+
+.restaurants-title {
+  margin: 1.6rem 2rem;
+}
+
+.restaurants-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: white;
+  border-style: none;
+  border-radius: 25px;
+  height: 200px;
+  width: 80%;
+  -webkit-box-shadow: 1px 1.5px 5px #999999;
+          box-shadow: 1px 1.5px 5px #999999;
+  margin: 0.8rem 0rem;
+}
+
+.restaurants-card:hover {
+  -webkit-box-shadow: 2px 3px 10px #999999;
+          box-shadow: 2px 3px 10px #999999;
+}
+
+.restaurants-card__image {
+  height: 66%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.restaurants-card__title {
+  margin: 0.8rem 0rem 0rem 0rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0rem 0rem 0rem 0.5rem;
+}
+
+.restaurants-card__city {
+  margin: 0.4rem 0rem 0rem 0rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0rem 0rem 0rem 0.5rem;
+}
+
+.restaurants-card__icon {
+  position: absolute;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   font-size: 1.5rem;
+  padding: 10rem 3rem 0rem 0rem;
+}
+
+.restaurants-card__new {
+  position: absolute;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-style: none;
+  border-radius: 5px;
+  background: #99E2D0;
+  padding: 0.6rem 2rem;
+  margin: 1rem;
+  color: #278870;
 }
 /*# sourceMappingURL=main.css.map */

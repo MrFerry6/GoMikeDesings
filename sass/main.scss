@@ -5,6 +5,13 @@
     @include page-format;
 }
 
+a{
+    text-decoration: none;
+    &:visited{
+        color: inherit;
+    }
+}
+
 h1{
     @include h1-format;
 }
@@ -13,6 +20,9 @@ h2{
 }
 h3{
     @include h3-format;
+}
+h4{
+    @include h4-format;
 }
 header{
    @include header-format;
@@ -44,6 +54,7 @@ header{
         }
     }
 }
+
 .how-works-container{
     @include how-works-container-format;
 }
@@ -57,6 +68,59 @@ header{
     }
     &__icon{
         @include how-works-icon-format;
+    }
+    &:hover{
+        background: $color-primary-lighten;
+        :nth-child(2){
+            color: $color-primary;
+        }
+    }
+}
+
+.restaurants-container{
+    @include restaurants-container;
+}
+
+.restaurants-title{
+    margin: $margin-title;
+
+}
+.restaurants-card{
+    @include restaurants-card;
+    &:hover{
+        box-shadow: $botton-shadow-hover;
+    }
+    &__image{
+        height: 66%;
+        object-fit: cover;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    &__title{
+        margin: $margin-top-light;
+        align-self: flex-start;
+        padding: $pading-left;
+    }
+    &__city{
+        margin: $margin-top-ultralight;
+        align-self: flex-start;
+        padding: $pading-left;
+    }
+    &__icon{
+        position: absolute;
+        align-self:flex-end;
+        font-size: $heart-icon-size;
+        padding: $pading-heart;
+    }
+    &__new{
+        position: absolute;
+        align-self: flex-end;
+        border-style: none;
+        border-radius: 5px;
+        background: $color-tertiary;
+        padding: $padding-new;
+        margin: $margin-right;
+        color: $color-tertiary-darken;
     }
 }
 

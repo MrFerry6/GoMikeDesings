@@ -8,6 +8,8 @@ $color-grey-background : #f2f2f2;
 $color-back-darken-ligth :  darken($color: $color-grey-background, $amount: 5);
 $color-back-darken-medium :  darken($color: $color-grey-background, $amount: 20);
 $color-text-lighten-medium : lighten($color: black, $amount: 35);
+$color-tertiary-darken : darken($color: $color-tertiary, $amount: 40);
+$color-primary-lighten : lighten($color: $color-primary, $amount: 35);
 
 $button-background : linear-gradient($color-secondary,$color-primary);
 $button-background-hover : linear-gradient(
@@ -22,16 +24,22 @@ $margin-top-bottom-ligth : 0.8rem 0rem;
 $margin-top-bottom-big : 2.5rem 0rem;
 $margin-top-big : 2.5rem 0rem 0rem 0rem;
 $margin-top-light : 0.8rem 0rem 0rem 0rem;
+$margin-top-ultralight : 0.4rem 0rem 0rem 0rem;
 $margin-bottom-big : 0rem 0rem 2.5rem 0rem;
 $margin-negative-left : 0rem 0rem 0rem -1rem;
 $margin-title :  1.6rem 2rem; 
 $h3-size : 1.2rem;
+$h4-size : 0.9rem;
 $h2-size : 1rem;
 $h1-size : 1.5rem;
+$heart-icon-size :1.5rem;
 $padding-light : 1.1rem;
 $pading-left-right : 0rem 1rem 0rem 1rem;
+$pading-left : 0rem 0rem 0rem 0.5rem;
 $pading-top-bottom : 1rem 0rem 1rem 0rem;
-    
+$pading-heart : 10rem 3rem 0rem 0rem;
+$padding-new : 0.6rem 2rem;
+$height-card : 200px;   
     //locator
     
     $margin-right : 1rem;

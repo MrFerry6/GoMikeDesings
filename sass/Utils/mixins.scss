@@ -17,6 +17,10 @@
     font-size: $h3-size;
     font-weight: 100;
 }
+@mixin h4-format {
+    font-size: $h4-size;
+    font-weight: 100;
+}
 @mixin header-format {
     font-family: Shrikhand;
     font-size: $header-font-size;
@@ -68,7 +72,6 @@
     flex-direction: column;
     align-items: flex-start;
     margin: $margin-top-bottom-ligth;
-    padding: $pading-left-right;
 }
 @mixin how-works-title-format {
     margin: $margin-title;
@@ -79,7 +82,7 @@
     align-items: center;
     border-style: none;
     align-self: center;
-    width: 80%;
+    width: 75%;
     margin: $margin-top-bottom-ligth;
     border-radius: 25px;
     background: $color-grey-background;
@@ -98,5 +101,24 @@
 @mixin how-works-icon-format {
     padding: $pading-left-right;
     color: $color-text-lighten-medium;
-    font-size: 1.5rem;
+}
+
+@mixin restaurants-container {    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: $color-grey-background;
+    margin: $margin-top-big;
+}
+@mixin restaurants-card {    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: white;
+    border-style: none;
+    border-radius: 25px;
+    height: $height-card;
+    width: 80%;
+    box-shadow: $botton-shadow;
+    margin: $margin-top-bottom-ligth;
 }
