@@ -154,6 +154,28 @@ header{
         margin: $margin-top-bottom-ultralight;
     }
 }
+
+footer{
+    color: white;
+    background: $color-darken-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-link{
+    margin: $margin-top-bottom-ultralight;
+    padding: $pading-left-big;
+    &__icon{
+        padding: $pading-right;
+    }
+    &__last{
+        margin: $margin-top-bottom-ul-big;
+        padding: $pading-left-big;
+    }
+}
+.footer-title{
+    padding: $pading-left-big;
+}
 @media (min-width: 768px) {
    
 }

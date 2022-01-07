@@ -435,4 +435,37 @@ header :first-child {
 .menu-card-title__description {
   margin: 0.4rem 0rem;
 }
+
+footer {
+  color: white;
+  background: #404040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-link {
+  margin: 0.4rem 0rem;
+  padding: 0rem 0rem 0rem 2rem;
+}
+
+.footer-link__icon {
+  padding: 0rem 0.5rem 0rem 0rem;
+}
+
+.footer-link__last {
+  margin: 0.4rem 0rem 2.5rem 0rem;
+  padding: 0rem 0rem 0rem 2rem;
+}
+
+.footer-title {
+  padding: 0rem 0rem 0rem 2rem;
+}
 /*# sourceMappingURL=main.css.map */

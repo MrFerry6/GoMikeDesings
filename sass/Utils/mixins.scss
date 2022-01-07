@@ -20,7 +20,8 @@
 @mixin h4-format {
     font-size: $h4-size;
     font-weight: 100;
-}@mixin h5-format {
+}
+@mixin h5-format {
     font-family: Shrikhand;
     font-size: $h5-size;
     font-weight:bold;
