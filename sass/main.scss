@@ -183,9 +183,43 @@ footer{
 .footer-title{
     padding: $pading-left-big;
 }
-@media (min-width: 768px) {
-   
+@media (min-width: 767px) {
+   main{
+       @include main-media;
+   }
+
+   .search-container{
+       width: 45%;
+   }
+   .how-works-container{
+       width: 50%;
+   }
+   .restaurants-container{
+       width: 95%;
+       @include restaurant-container-media;
+      
+   }
+   .restaurants-card{
+       width: 45%;
+       margin: $margin-top-bottom-ul-big;
+   }
+   .restaurants-title{
+       width: $all-width;
+       @include restaurants-title-media;
+   }
+   header{
+       @include header-media;
+   }
 }
 @media (min-width: 991px) {
-   
+   .restaurants-card{
+       width: 29%;
+       margin: $margin-lr-tb-light;
+   }
+   .restaurants-title{
+       width: 95%;
+   }
+   .restaurants-container{
+       justify-content: space-between;
+   }
 }

@@ -276,6 +276,31 @@
         :nth-child(2){
             opacity: 100%;
         }
-    }
-    
+    }    
+}
+@mixin main-media {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin restaurant-container-media {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-style: none;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+}
+@mixin restaurants-title-media {
+    align-self: flex-start;
+    border-style: solid;
+    border-color: $color-tertiary;
+  
+    border-width: $border-menu-title;
+}
+@mixin header-media {    
+    justify-content: flex-start;
+    padding: $pading-left-big;
+    margin: $margin-top-bottom-ligth;
 }
