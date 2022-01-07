@@ -16,6 +16,7 @@ $button-background : linear-gradient($color-secondary,$color-primary);
 $button-background-hover : linear-gradient(
     lighten($color: $color-secondary, $amount: 5 ),
     lighten($color: $color-primary, $amount: 5 ));
+$heart-hover : linear-gradient($color-primary,$color-secondary);
 
 //Sizes
 

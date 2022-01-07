@@ -104,14 +104,21 @@ header{
     &__city{
         @include restaurant-card-city;
     }
-    &__icon{
-        @include restaurant-card-icon;
-    }
     &__new{
         @include restaurant-card-new;
     }
 }
-
+.heart-container{
+    @include restaurant-card-icon;  
+    @include heart-animation;
+}
+.heart-menu{    
+    font-size: $icon-size;
+    @include heart-animation;
+    &__icon-hover{
+        margin: 0rem -1.5rem;
+    }
+}
 .menu-image{
     @include menu-image;
 }

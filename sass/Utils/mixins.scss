@@ -151,12 +151,25 @@
     align-self: flex-start;
     padding: $pading-left;
 }
+
 @mixin restaurant-card-icon {
     position: absolute;
     align-self:flex-end;
     font-size: $icon-size;
     padding: $pading-heart;
 }
+@mixin heart_gradient_color{    
+    background: $heart-hover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin heart-transition{    
+    transition-duration: 1000ms;
+    transition-property: Opacity;
+    transition-timing-function: ease-in-out;  
+}
+
 @mixin restaurant-card-new {
     position: absolute;
     align-self: flex-end;
@@ -241,4 +254,28 @@
     flex-direction: column;
     align-items: flex-start; 
     padding: $pading-left; 
+}
+@mixin heart-animation {     
+    &__icon{    
+        position: relative;
+        opacity: 100%;
+        transition-delay: 200ms;        
+        @include heart-transition;
+    }
+    &__icon-hover{ 
+        position: absolute;
+        margin: 0.06rem -1.5rem;
+        @include heart-transition;
+        @include heart_gradient_color;
+        opacity: 0%;
+    }
+    &:hover{
+        :nth-child(1){
+            opacity: 0%;
+        }
+        :nth-child(2){
+            opacity: 100%;
+        }
+    }
+    
 }
