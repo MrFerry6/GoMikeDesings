@@ -235,7 +235,9 @@
     border-radius: 15px;
     margin: $margin-top-bottom-ultralight;
     box-shadow: $botton-shadow;
-}
+    opacity: 100%;
+    animation: show-menu-card 3s ease-in-out;
+ }
 @mixin menu-card-prize{
     align-self: flex-end;  
     padding: $pading-right;
@@ -303,4 +305,34 @@
     justify-content: flex-start;
     padding: $pading-left-big;
     margin: $margin-top-bottom-ligth;
+}
+
+@mixin modal {    
+    position: absolute; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;     
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0%;  
+    z-index: -2; 
+    animation: show-spin 2s;
+}
+@mixin loader-container {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%;     
+    background-color: $color-backgroud-dark-transparent; 
+}
+@mixin loader {
+    border: 16px solid #f3f3f3;
+    border-style: double;  
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
 }

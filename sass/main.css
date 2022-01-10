@@ -480,6 +480,9 @@ header :first-child {
   margin: 0.4rem 0rem;
   -webkit-box-shadow: 1px 1.5px 5px #999999;
           box-shadow: 1px 1.5px 5px #999999;
+  opacity: 100%;
+  -webkit-animation: show-menu-card 3s ease-in-out;
+          animation: show-menu-card 3s ease-in-out;
 }
 
 .menu-card__prize {
@@ -553,6 +556,130 @@ footer {
   padding: 0rem 0rem 0rem 2rem;
 }
 
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0%;
+  z-index: -2;
+  -webkit-animation: show-spin 2s;
+          animation: show-spin 2s;
+}
+
+.loader-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loader-container__loader {
+  border: 16px solid #f3f3f3;
+  border-style: double;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+          animation: spin 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes show-spin {
+  0% {
+    z-index: 2;
+    opacity: 100%;
+  }
+  100% {
+    z-index: 2;
+    opacity: 100%;
+  }
+}
+
+@keyframes show-spin {
+  0% {
+    z-index: 2;
+    opacity: 100%;
+  }
+  100% {
+    z-index: 2;
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes show-menu-card {
+  0% {
+    opacity: 0%;
+  }
+  60% {
+    opacity: 0%;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes show-menu-card {
+  0% {
+    opacity: 0%;
+  }
+  60% {
+    opacity: 0%;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
 @media (min-width: 767px) {
   main {
     display: -webkit-box;
@@ -610,6 +737,12 @@ footer {
 }
 
 @media (min-width: 991px) {
+  main {
+    width: 992px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .restaurants-card {
     width: 29%;
     margin: 1rem 1rem;

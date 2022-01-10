@@ -183,6 +183,46 @@ footer{
 .footer-title{
     padding: $pading-left-big;
 }
+
+.modal{ 
+    @include modal;
+}
+
+.loader-container{
+    @include loader-container;
+    &__loader{
+        @include loader;
+    }  
+  }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    30% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+@keyframes show-spin {
+    0% {
+        z-index: 2;
+        opacity: 100%; 
+    }
+    100% {
+        z-index: 2;
+        opacity: 100%;
+    }
+}
+@keyframes show-menu-card {
+    0% {
+        opacity: 0%;
+    }
+    60% {
+        opacity: 0%;        
+        transform: translateY(10px); 
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
 @media (min-width: 767px) {
    main{
        @include main-media;
@@ -212,6 +252,10 @@ footer{
    }
 }
 @media (min-width: 991px) {
+    main{
+        width: 992px;
+        align-items: center;
+    }
    .restaurants-card{
        width: 29%;
        margin: $margin-lr-tb-light;

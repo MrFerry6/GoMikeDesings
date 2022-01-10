@@ -11,6 +11,8 @@ $color-darken-dark :  darken($color: $color-grey-background, $amount: 70);
 $color-text-lighten-medium : lighten($color: black, $amount: 35);
 $color-tertiary-darken : darken($color: $color-tertiary, $amount: 40);
 $color-primary-lighten : lighten($color: $color-primary, $amount: 35);
+$color-backgroud-dark-transparent : rgba(0,0,0,0.5);
+
 
 $button-background : linear-gradient($color-secondary,$color-primary);
 $button-background-hover : linear-gradient(
