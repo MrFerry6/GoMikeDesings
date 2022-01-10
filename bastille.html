@@ -4,7 +4,7 @@
 <head>
     <title>Bastille</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -14,126 +14,130 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 </head>
-<main>
+
+<body>
+    <div class="modal">
+        <div class="loader-container">
+            <div class="loader-container__loader"></div>
+        </div>
+    </div>
     <header class="header-menu">
         <img src="/images/logo/ohmyfood.png" alt="ohmyfood">
         <a class="fas fa-arrow-left" href="index.html"></a>
     </header>
-    <body>
-        <main>
-            <section>
-                <img class="menu-image" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="palette">
-            </section>
-            <section class="menu-container">
-                <div class="menu-title-container">
-                    <h5>Bastille</h5>
-                    <div class="heart-menu">
-                        <i class="far fa-heart heart-menu__icon"></i>
-                        <i class="fas fa-heart heart-menu__icon-hover"></i>
-                    </div>
-                </div> 
-                <div class="menu-element-container">
-                    <h3 class="menu-element-title">ESTARTERS</h3>
-                    
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">Citrus Squid Carpaccio</h2>
-                            <h4 class="menu-card-title__description">with orange zest</h4>
-                        </div>
-                        <h2 class="menu-card__prize">25€</h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">grandmother's vegetable Soup</h2>
-                            <h4 class="menu-card-title__description">Carrots, parnips, Jerusalem artichke0</h4>
-                        </div>
-                        <h2 class="menu-card__prize">35€</h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">Onion Soup</h2>
-                            <h4 class="menu-card-title__description">revisted</h4>
-                        </div>
-                        <h2 class="menu-card__prize">40€</h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
-                    </div>                    
+    <main>
+        <section class="menu-image-container">
+            <img class="menu-image" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="palette">
+        </section>
+        <section class="menu-container">
+            <div class="menu-title-container">
+                <h5>Bastille</h5>
+                <div class="heart-menu">
+                    <i class="far fa-heart heart-menu__icon"></i>
+                    <i class="fas fa-heart heart-menu__icon-hover"></i>
                 </div>
-                <div class="menu-element-container">
-                    <h3 class="menu-element-title">MAIN DISH</h3>
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">Scallops</h2>
-                            <h4 class="menu-card-title__description">with mashed parsnip</h4>
-                        </div>
-                        <h2 class="menu-card__prize">40€</h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
+            </div>
+            <div class="menu-element-container">
+                <h3 class="menu-element-title">ESTARTERS</h3>
+
+                <div class="menu-card">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">Citrus Squid Carpaccio</h2>
+                        <h4 class="menu-card-title__description">with orange zest</h4>
                     </div>
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">Magret de Canard</h2>
-                            <h4 class="menu-card-title__description">with mashed potatoes</h4>
-                        </div>
-                        <h2 class="menu-card__prize">35€</h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">Game Hen</h2>
-                            <h4 class="menu-card-title__description">whith vegetable gnocchis</h4>
-                        </div>
-                        <h2 class="menu-card__prize">44€</h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
-                    </div>                    
+                    <h2 class="menu-card__prize">25€</h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
                 </div>
-                <div class="menu-element-container">
-                    <h3 class="menu-element-title">DESSERST</h3>
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">Floral Ice Cream</h2>
-                            <h4 class="menu-card-title__description">with hazelnut butter</h4>
-                        </div>
-                        <h2 class="menu-card__prize">18€</h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
+                <div class="menu-card  menu-card__2">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">grandmother's vegetable Soup</h2>
+                        <h4 class="menu-card-title__description">Carrots, parnips, Jerusalem artichke0</h4>
                     </div>
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">Chocolate Lava Cake</h2>
-                            <h4 class="menu-card-title__description">revisted</h4>
-                        </div>
-                        <h2 class="menu-card__prize">22</h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-title">
-                            <h2 class="menu-card-title__dish">Napolean</h2>
-                            <h4 class="menu-card-title__description">with bluberries and marzipan</h4>
-                        </div>
-                        <h2 class="menu-card__prize"></h2>
-                        <i class="fas fa-check-circle menu-card__check"></i>
-                    </div>                    
+                    <h2 class="menu-card__prize">35€</h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
                 </div>
-                <button class="search-content__button  menu-container__menu-botton">order</button>               
-            </section>
-        </main>
-        <footer>
-            <h5 class="footer-title">ohmyfood</h5>
-            <a href="#" class="footer-link">
-                <i class="fas fa-utensils footer-link__icon"></i>
-                Suggest a restaurant
-            </a>
-            <a href="#" class="footer-link">
-                <i class="fas fa-hands-helping footer-link__icon"></i>
-                Become a partner
-            </a href="#" class="footer-link">
-            <a href="#" class="footer-link">
-                Legal
-            </a>
-            <a href="#" class="footer-link__last">
-                Contact
-            </a>
-        </footer>
-    </body>
-</main>
+                <div class="menu-card  menu-card__3">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">Onion Soup</h2>
+                        <h4 class="menu-card-title__description">revisted</h4>
+                    </div>
+                    <h2 class="menu-card__prize">40€</h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
+                </div>
+            </div>
+            <div class="menu-element-container">
+                <h3 class="menu-element-title">MAIN DISH</h3>
+                <div class="menu-card">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">Scallops</h2>
+                        <h4 class="menu-card-title__description">with mashed parsnip</h4>
+                    </div>
+                    <h2 class="menu-card__prize">40€</h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
+                </div>
+                <div class="menu-card  menu-card__2">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">Magret de Canard</h2>
+                        <h4 class="menu-card-title__description">with mashed potatoes</h4>
+                    </div>
+                    <h2 class="menu-card__prize">35€</h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
+                </div>
+                <div class="menu-card  menu-card__3">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">Game Hen</h2>
+                        <h4 class="menu-card-title__description">whith vegetable gnocchis</h4>
+                    </div>
+                    <h2 class="menu-card__prize">44€</h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
+                </div>
+            </div>
+            <div class="menu-element-container">
+                <h3 class="menu-element-title">DESSERST</h3>
+                <div class="menu-card">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">Floral Ice Cream</h2>
+                        <h4 class="menu-card-title__description">with hazelnut butter</h4>
+                    </div>
+                    <h2 class="menu-card__prize">18€</h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
+                </div>
+                <div class="menu-card  menu-card__2">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">Chocolate Lava Cake</h2>
+                        <h4 class="menu-card-title__description">revisted</h4>
+                    </div>
+                    <h2 class="menu-card__prize">22</h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
+                </div>
+                <div class="menu-card  menu-card__3">
+                    <div class="menu-card-title">
+                        <h2 class="menu-card-title__dish">Napolean</h2>
+                        <h4 class="menu-card-title__description">with bluberries and marzipan</h4>
+                    </div>
+                    <h2 class="menu-card__prize"></h2>
+                    <i class="fas fa-check-circle menu-card__check"></i>
+                </div>
+            </div>
+            <button class="search-content__button  menu-container__menu-botton">order</button>
+        </section>
+    </main>
+    <footer>
+        <h5 class="footer-title">ohmyfood</h5>
+        <a href="#" class="footer-link">
+            <i class="fas fa-utensils footer-link__icon"></i>
+            Suggest a restaurant
+        </a>
+        <a href="#" class="footer-link">
+            <i class="fas fa-hands-helping footer-link__icon"></i>
+            Become a partner
+        </a href="#" class="footer-link">
+        <a href="#" class="footer-link">
+            Legal
+        </a>
+        <a href="#" class="footer-link__last">
+            Contact
+        </a>
+    </footer>
+</body>
 </html>

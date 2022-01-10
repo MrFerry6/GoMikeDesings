@@ -13,6 +13,10 @@ a:visited {
   color: inherit;
 }
 
+body {
+  max-width: 480px;
+}
+
 h1 {
   font-size: 1.5rem;
   font-weight: 900;
@@ -481,8 +485,8 @@ header :first-child {
   -webkit-box-shadow: 1px 1.5px 5px #999999;
           box-shadow: 1px 1.5px 5px #999999;
   opacity: 100%;
-  -webkit-animation: show-menu-card 3s ease-in-out;
-          animation: show-menu-card 3s ease-in-out;
+  -webkit-animation: show-menu-card 3s ease-in;
+          animation: show-menu-card 3s ease-in;
 }
 
 .menu-card__prize {
@@ -499,6 +503,21 @@ header :first-child {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color: white;
+}
+
+.menu-card__2 {
+  -webkit-animation-duration: 3300ms;
+          animation-duration: 3300ms;
+}
+
+.menu-card__3 {
+  -webkit-animation-duration: 3600ms;
+          animation-duration: 3600ms;
+}
+
+.menu-card__4 {
+  -webkit-animation-duration: 3900ms;
+          animation-duration: 3900ms;
 }
 
 .menu-card-title {
@@ -562,7 +581,7 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0%;
   z-index: -2;
   -webkit-animation: show-spin 2s;
@@ -581,7 +600,6 @@ footer {
           align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .loader-container__loader {
@@ -680,7 +698,10 @@ footer {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -734,11 +755,24 @@ footer {
     padding: 0rem 0rem 0rem 2rem;
     margin: 0.8rem 0rem;
   }
+  .header-menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu-card {
+    width: 55%;
+  }
+  .menu-image-container {
+    width: 100%;
+  }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
+  body {
+    max-width: 992px;
+  }
   main {
-    width: 992px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -754,6 +788,9 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .menu-card {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=main.css.map */
