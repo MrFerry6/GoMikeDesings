@@ -111,11 +111,12 @@ header{
         @include restaurant-card-new;
     }
 }
-.heart-container{
+.heart-container{    
     @include restaurant-card-icon;  
     @include heart-animation;
+
 }
-.heart-menu{    
+.heart-menu{      
     font-size: $icon-size;
     @include heart-animation;
     &__icon-hover{
@@ -176,9 +177,6 @@ header{
             transform: rotate(-360deg);
             }
         }        
-    }
-    .fa-check-circle{
-        rotate: 180deg;
     }
 }
 .menu-card-title{

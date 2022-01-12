@@ -156,7 +156,7 @@
     position: absolute;
     align-self:flex-end;
     font-size: $icon-size;
-    padding: $pading-heart;
+    margin: $margin-heart;
 }
 @mixin heart_gradient_color{    
     background: $heart-hover;

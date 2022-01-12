@@ -295,7 +295,7 @@ header :first-child {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: 1.5rem;
-  padding: 10rem 3rem 0rem 0rem;
+  margin: 10rem 3rem 0rem 0rem;
 }
 
 .heart-container__icon {
@@ -535,10 +535,6 @@ header :first-child {
           transition-duration: 1s;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
-}
-
-.menu-card .fa-check-circle {
-  rotate: 180deg;
 }
 
 .menu-card-title {
