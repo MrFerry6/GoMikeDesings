@@ -166,6 +166,20 @@ header{
     {
         animation-duration: 3900ms
     }
+    &:hover{
+        :nth-child(3){
+            transition-duration: 1s;
+            width: 30%;
+            opacity: 100%;
+            :nth-child(1){
+            transition-duration: 1s;
+            transform: rotate(-360deg);
+            }
+        }        
+    }
+    .fa-check-circle{
+        rotate: 180deg;
+    }
 }
 .menu-card-title{
     @include menu-card-title;
@@ -225,7 +239,6 @@ footer{
         opacity: 100%;
     }
 }
-
 @keyframes show-menu-card {
     0% {
         opacity: 0%;

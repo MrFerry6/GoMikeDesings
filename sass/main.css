@@ -493,16 +493,19 @@ header :first-child {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0rem 0.5rem 0rem 0rem;
+  width: 10%;
 }
 
 .menu-card__check {
   padding: 2rem 1rem;
   background: #99E2D0;
   height: 100%;
+  width: 0%;
   border-style: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color: white;
+  opacity: 0%;
 }
 
 .menu-card__2 {
@@ -520,6 +523,24 @@ header :first-child {
           animation-duration: 3900ms;
 }
 
+.menu-card:hover :nth-child(3) {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 30%;
+  opacity: 100%;
+}
+
+.menu-card:hover :nth-child(3) :nth-child(1) {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.menu-card .fa-check-circle {
+  rotate: 180deg;
+}
+
 .menu-card-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,6 +553,7 @@ header :first-child {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0rem 0rem 0rem 0.5rem;
+  width: 60%;
 }
 
 .menu-card-title__dish {

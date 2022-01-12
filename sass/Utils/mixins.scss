@@ -241,21 +241,27 @@
 @mixin menu-card-prize{
     align-self: flex-end;  
     padding: $pading-right;
+    width: 10%;
+    
 }
 @mixin menu-card-check {
+    
     padding: $padding-check;
     background: $color-tertiary;
     height: 100%;
+    width: 0%;
     border-style: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: white;
+    opacity: 0%;
 }
 @mixin menu-card-title {    
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    padding: $pading-left; 
+    padding: $pading-left;
+    width: 60%; 
 }
 @mixin heart-animation {     
     &__icon{    
