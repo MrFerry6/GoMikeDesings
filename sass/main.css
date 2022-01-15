@@ -17,6 +17,10 @@ body {
   max-width: 480px;
 }
 
+.testbody {
+  height: 100%;
+}
+
 h1 {
   font-size: 1.5rem;
   font-weight: 900;
@@ -473,9 +477,9 @@ header :first-child {
           align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 75px;
   width: 90%;
   background: white;
@@ -485,11 +489,12 @@ header :first-child {
   -webkit-box-shadow: 1px 1.5px 5px #999999;
           box-shadow: 1px 1.5px 5px #999999;
   opacity: 100%;
-  -webkit-animation: show-menu-card 3s ease-in;
-          animation: show-menu-card 3s ease-in;
+  -webkit-animation: show-menu-card 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+          animation: show-menu-card 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .menu-card__prize {
+  position: relative;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0rem 0.5rem 0rem 0rem;
@@ -497,7 +502,16 @@ header :first-child {
 }
 
 .menu-card__check {
-  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   background: #99E2D0;
   height: 100%;
   width: 0%;
@@ -509,21 +523,31 @@ header :first-child {
 }
 
 .menu-card__2 {
-  -webkit-animation-duration: 3300ms;
-          animation-duration: 3300ms;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .menu-card__3 {
-  -webkit-animation-duration: 3600ms;
-          animation-duration: 3600ms;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
 }
 
 .menu-card__4 {
-  -webkit-animation-duration: 3900ms;
-          animation-duration: 3900ms;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+}
+
+.menu-card:hover .menu-card-title {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 60%;
 }
 
 .menu-card:hover :nth-child(3) {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   width: 30%;
@@ -531,6 +555,8 @@ header :first-child {
 }
 
 .menu-card:hover :nth-child(3) :nth-child(1) {
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-transform: rotate(-360deg);
@@ -538,6 +564,7 @@ header :first-child {
 }
 
 .menu-card-title {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,14 +576,24 @@ header :first-child {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0rem 0rem 0rem 0.5rem;
-  width: 60%;
+  width: 90%;
 }
 
 .menu-card-title__dish {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
   margin: 0.4rem 0rem 0rem 0rem;
 }
 
 .menu-card-title__description {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
   margin: 0.4rem 0rem;
 }
 
@@ -594,9 +631,9 @@ footer {
 }
 
 .modal {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);

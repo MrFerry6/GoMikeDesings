@@ -227,7 +227,7 @@
     flex-direction: row;
     align-items: center;
     align-self: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 75px;
     width: 90%;
     background: white;
@@ -236,17 +236,19 @@
     margin: $margin-top-bottom-ultralight;
     box-shadow: $botton-shadow;
     opacity: 100%;
-    animation: show-menu-card 3s ease-in;
+    animation: show-menu-card 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
  }
 @mixin menu-card-prize{
+    position: relative;
     align-self: flex-end;  
     padding: $pading-right;
-    width: 10%;
-    
+    width: 10%;    
 }
 @mixin menu-card-check {
-    
-    padding: $padding-check;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
     background: $color-tertiary;
     height: 100%;
     width: 0%;
@@ -256,12 +258,19 @@
     color: white;
     opacity: 0%;
 }
-@mixin menu-card-title {    
+@mixin menu-card-title { 
+    position:relative;   
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
     padding: $pading-left;
-    width: 60%; 
+    width: 90%;
+}
+@mixin text-ellipsis {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 @mixin heart-animation {     
     &__icon{    
@@ -313,12 +322,12 @@
     margin: $margin-top-bottom-ligth;
 }
 
-@mixin modal {    
-    position: absolute; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;     
+@mixin modal {
+    position: fixed; 
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     background-color: $color-backgroud-dark-transparent;
     opacity: 0%;  
     z-index: -2; 

@@ -15,6 +15,9 @@ a{
 body{
     max-width: 480px;
 }
+.testbody{
+    height: 100%;
+}
 h1{
     @include h1-format;
 }
@@ -157,24 +160,31 @@ header{
     }
     &__2
     {
-        animation-duration: 3300ms
+        animation-duration: 1000ms
     }
     &__3
     {
-        animation-duration: 3600ms
+        animation-duration: 1500ms
     }
     &__4
     {
-        animation-duration: 3900ms
+        animation-duration: 2000ms
     }
     &:hover{
+        .menu-card-title{
+            transition-timing-function: ease-in-out;
+            transition-duration: 1s;
+            width: 60%;
+        }
         :nth-child(3){
+            transition-timing-function: ease-in-out;
             transition-duration: 1s;
             width: 30%;
             opacity: 100%;
             :nth-child(1){
-            transition-duration: 1s;
-            transform: rotate(-360deg);
+                transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                transition-duration: 1s;
+                transform: rotate(-360deg);
             }
         }        
     }
@@ -182,9 +192,13 @@ header{
 .menu-card-title{
     @include menu-card-title;
     &__dish{
+        @include text-ellipsis;
+        text-align: left;        
         margin: $margin-top-ultralight;
     }
-    &__description{        
+    &__description{
+        @include text-ellipsis;    
+        text-align: left;           
         margin: $margin-top-bottom-ultralight;
     }
 }
@@ -221,7 +235,6 @@ footer{
         @include loader;
     }  
   }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     30% { transform: rotate(180deg); }
