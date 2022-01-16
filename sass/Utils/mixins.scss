@@ -246,6 +246,7 @@
 }
 @mixin menu-card-check {
     display: flex;
+    transition-duration: 1s;
     justify-content: center;
     align-items: center;
     position:relative;
@@ -258,7 +259,8 @@
     color: white;
     opacity: 0%;
 }
-@mixin menu-card-title { 
+@mixin menu-card-title {
+    transition-duration: 1s;
     position:relative;   
     display: flex;
     flex-direction: column;
