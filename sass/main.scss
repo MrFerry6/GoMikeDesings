@@ -203,7 +203,9 @@ header{
         margin: $margin-top-bottom-ultralight;
     }
 }
-
+.fa-check-circle{
+    transition-duration: 1s;;
+}
 footer{
     color: white;
     background: $color-darken-dark;
@@ -303,6 +305,9 @@ footer{
    .menu-image-container{
        width: $all-width;
    }
+   .search-content__button{
+    width: 35%;
+}
 }
 @media (min-width: 992px) {
     body{
@@ -323,5 +328,8 @@ footer{
    }
    .menu-card{
        width: 45%;
+   }
+   .search-content__button{
+       width: 30%;
    }
 }

@@ -506,6 +506,8 @@ header :first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -565,6 +567,8 @@ header :first-child {
 }
 
 .menu-card-title {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,6 +600,11 @@ header :first-child {
   text-overflow: ellipsis;
   text-align: left;
   margin: 0.4rem 0rem;
+}
+
+.fa-check-circle {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 footer {
@@ -822,6 +831,9 @@ footer {
   .menu-image-container {
     width: 100%;
   }
+  .search-content__button {
+    width: 35%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -847,6 +859,9 @@ footer {
   }
   .menu-card {
     width: 45%;
+  }
+  .search-content__button {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */
