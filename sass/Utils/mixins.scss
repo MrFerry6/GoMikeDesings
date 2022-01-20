@@ -1,32 +1,32 @@
-@mixin page-format {
+@mixin page {
     box-sizing: border-box;    
     font-family: Roboto;
     text-align: center;
 }
 
-@mixin h1-format {
+@mixin h1 {
     font-size: $h1-size;
     font-weight: 900;
 }
 
-@mixin h2-format {
+@mixin h2 {
     font-size: $h2-size;
     font-weight: 600;
 }
-@mixin h3-format {
+@mixin h3 {
     font-size: $h3-size;
     font-weight: 100;
 }
-@mixin h4-format {
+@mixin h4 {
     font-size: $h4-size;
     font-weight: 100;
 }
-@mixin h5-format {
+@mixin h5 {
     font-family: Shrikhand;
     font-size: $h5-size;
     font-weight:bold;
 }
-@mixin header-format {
+@mixin header {
     display: flex;
     justify-content: center;
     margin: $margin-top-bottom-ligth;
@@ -42,7 +42,7 @@
         font-size: $icon-size;
     }  
 }
-@mixin locator-format {
+@mixin locator {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -53,19 +53,19 @@
     border-width: $border-locator;
     border-color: $color-back-darken-medium;
 }
-@mixin search-title-format {    
+@mixin search-title {    
     color: $color-text-lighten-medium;
     margin: $margin-top-bottom-big;        
     padding: $pading-left-right;
 }
-@mixin Search-format {
+@mixin Search {
     display: flex;
     flex-direction: column;
     align-items: center;
     background : $color-grey-background;
 }
 
-@mixin button-format {
+@mixin button {
     margin: $margin-bottom-big;
     padding: $padding-light;
     width: 60%;
@@ -80,16 +80,16 @@
     box-shadow: $botton-shadow-hover;
     background: $button-background-hover;
 }
-@mixin how-works-container-format {
+@mixin how-works-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: $margin-top-bottom-ligth;
 }
-@mixin how-works-title-format {
+@mixin how-works-title {
     margin: $margin-title;
 }
-@mixin how-works-element-format {    
+@mixin how-works-element {    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,7 +102,7 @@
     padding: $pading-top-bottom;
     box-shadow: $botton-shadow;
 }
-@mixin how-works-step-num-format {
+@mixin how-works-step-num {
     border-style: none;
     border-radius: 50%;
     background-color: $color-primary;
@@ -111,7 +111,7 @@
     margin: $margin-negative-left;
     font-weight: 100;
 }
-@mixin how-works-icon-format {
+@mixin how-works-icon {
     padding: $pading-left-right;
     color: $color-text-lighten-medium;
 }
@@ -274,6 +274,22 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+@mixin menu-card-title-transition {
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    width: 60%;
+}
+@mixin Check-container-transition {
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    width: 30%;
+    opacity: 100%;
+}
+@mixin Check-icon-transition {
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition-duration: 1s;
+    transform: rotate(-360deg);
+}
 @mixin heart-animation {     
     &__icon{    
         position: relative;
@@ -283,7 +299,7 @@
     }
     &__icon-hover{ 
         position: absolute;
-        margin: 0.06rem -1.5rem;
+        margin: $margin-heart-hover;
         @include heart-transition;
         @include heart_gradient_color;
         opacity: 0%;
@@ -296,6 +312,13 @@
             opacity: 100%;
         }
     }    
+}
+@mixin fotter {
+    color: white;
+    background: $color-darken-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 @mixin main-media {
     display: flex;

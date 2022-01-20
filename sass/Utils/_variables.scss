@@ -37,8 +37,8 @@ $margin-negative-left : 0rem 0rem 0rem -1rem;
 $margin-title :  1.6rem 2rem;
 $margin-left-heart: 0rem 0rem 0rem 8rem;
 $margin-left: 0rem 0rem 0rem 2rem;
-
 $margin-heart : 10rem 3rem 0rem 0rem;
+$margin-heart-hover : 0.06rem -1.5rem;
 $margin-menu-container : -3rem 0rem 0rem 0rem; 
 $h3-size : 1.2rem;
 $h4-size : 0.9rem;
@@ -56,14 +56,9 @@ $pading-heart-menu :0rem 0rem 0rem 18rem;
 $padding-new : 0.6rem 2rem;
 $padding-check : 2rem 1rem;
 $height-card : 200px;   
-    //locator
-    
-    $margin-right : 1rem;
-    $border-locator : 0.2rem 0rem 0rem 0rem;
-
-    //how-work
-
-    $pading-step-num : 0.3rem 0.6rem;
+$margin-right : 1rem;
+$border-locator : 0.2rem 0rem 0rem 0rem;
+$pading-step-num : 0.3rem 0.6rem;
 
 
 
@@ -73,6 +68,3 @@ $border-button-radius : 2.5rem;
 $border-menu-title : 0rem 0rem 0.2rem 0rem;
 $botton-shadow : 1px  1.5px 5px  lighten($color: black, $amount: 60);
 $botton-shadow-hover : 2px 3px 10px  lighten($color: black, $amount: 60);
-
-$body-values : 0;
-$body-height: 0;

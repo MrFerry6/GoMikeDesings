@@ -1,8 +1,9 @@
 @import "Utils/variables";
 @import "Utils/mixins";
+@import "Utils/key-frames.scss";
 
 *{
-    @include page-format;
+    @include page;
 }
 
 a{
@@ -16,36 +17,34 @@ a{
 body{
     max-width: 480px;
 }
-.testbody{
-    height: 100%;
-}
 h1{
-    @include h1-format;
+    @include h1;
 }
 h2{
-    @include h2-format;
+    @include h2;
 }
 h3{
-    @include h3-format;
+    @include h3;
 }
 h4{
-    @include h4-format;
+    @include h4;
 }
 h5{
-    @include h5-format;
+    @include h5;
 }
 header{
-   @include header-format;   
+   @include header;   
 }
 .header-menu{
     @include header-menu;
 }
+
 .search-container{
-    @include Search-format;
+    @include Search;
 }
 .search-content{    
     &__locator{
-        @include locator-format;
+        @include locator;
     }
     &__icon-locator{
         margin-right: $margin-right;
@@ -57,10 +56,10 @@ header{
         margin: $margin-top-big;
     }  
     &__description{
-        @include search-title-format;
+        @include search-title;
     }
     &__button{
-        @include button-format;
+        @include button;
         &:hover{
             @include button-hover;
         }
@@ -68,18 +67,18 @@ header{
 }
 
 .how-works-container{
-    @include how-works-container-format;
+    @include how-works-container;
 }
 .how-works-title{
-    @include how-works-title-format;   
+    @include how-works-title;   
 }
 .how-works-element{
-    @include how-works-element-format;
+    @include how-works-element;
     &__step-num{
-        @include how-works-step-num-format;
+        @include how-works-step-num;
     }
     &__icon{
-        @include how-works-icon-format;
+        @include how-works-icon;
     }
     &:hover{
         background: $color-primary-lighten;
@@ -115,6 +114,7 @@ header{
         @include restaurant-card-new;
     }
 }
+
 .heart-container{    
     @include restaurant-card-icon;  
     @include heart-animation;
@@ -122,17 +122,15 @@ header{
 }
 .heart-menu{      
     font-size: $icon-size;
-    @include heart-animation;
-    &__icon-hover{
-        margin: 0rem -1.5rem;
-    }
+    @include heart-animation;    
 }
+
 .menu-image{
     @include menu-image;
 }
 .menu-container{
     @include menu-container;
-    &__menu-botton{
+    &__botton{
         align-self: center;
         margin: $margin-top-bottom-big;
         width: 50%;
@@ -173,19 +171,12 @@ header{
     }
     &:hover{
         .menu-card-title{
-            transition-timing-function: ease-in-out;
-            transition-duration: 1s;
-            width: 60%;
+            @include menu-card-title-transition;
         }
         :nth-child(3){
-            transition-timing-function: ease-in-out;
-            transition-duration: 1s;
-            width: 30%;
-            opacity: 100%;
+            @include Check-container-transition;
             :nth-child(1){
-                transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-                transition-duration: 1s;
-                transform: rotate(-360deg);
+                @include Check-icon-transition;
             }
         }        
     }
@@ -207,11 +198,7 @@ header{
     transition-duration: 1s;;
 }
 footer{
-    color: white;
-    background: $color-darken-dark;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include fotter;
 }
 .footer-link{
     margin: $margin-top-bottom-ultralight;
@@ -238,34 +225,7 @@ footer{
         @include loader;
     }  
   }
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    30% { transform: rotate(180deg); }
-    100% { transform: rotate(360deg); }
-  }
-@keyframes show-spin {
-    0% {
-        z-index: 2;
-        opacity: 100%; 
-    }
-    100% {
-        z-index: 2;
-        opacity: 100%;
-    }
-}
-@keyframes show-menu-card {
-    0% {
-        opacity: 0%;
-    }
-    60% {
-        opacity: 0%;        
-        transform: translateY(10px); 
-    }
-    100% {
-        opacity: 100%;
-        transform: translateY(0px);
-    }
-}
+
 @media (min-width: 768px) {
     body{
         max-width: 768px;
@@ -305,10 +265,13 @@ footer{
    .menu-image-container{
        width: $all-width;
    }
-   .search-content__button{
-    width: 35%;
+   .menu-container{
+    &__botton{
+        width: 30%;
+    }   
+    }
 }
-}
+
 @media (min-width: 992px) {
     body{
         max-width: 992px;
@@ -329,7 +292,9 @@ footer{
    .menu-card{
        width: 45%;
    }
-   .search-content__button{
-       width: 30%;
-   }
+   .menu-container{
+        &__botton{
+            width: 30%;
+        }   
+    }
 }
