@@ -68,3 +68,8 @@ $border-button-radius : 2.5rem;
 $border-menu-title : 0rem 0rem 0.2rem 0rem;
 $botton-shadow : 1px  1.5px 5px  lighten($color: black, $amount: 60);
 $botton-shadow-hover : 2px 3px 10px  lighten($color: black, $amount: 60);
+
+//cubic-bezer
+
+$ease-in-out-back : 0.680, -0.550, 0.265, 1.550;
+$ease-out-back : 0.18, 0.89, 0.32, 1.28;

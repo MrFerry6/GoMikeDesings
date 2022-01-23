@@ -236,7 +236,7 @@
     margin: $margin-top-bottom-ultralight;
     box-shadow: $botton-shadow;
     opacity: 100%;
-    animation: show-menu-card 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    animation: show-menu-card 500ms cubic-bezier($ease-out-back);
  }
 @mixin menu-card-prize{
     position: relative;
@@ -286,7 +286,7 @@
     opacity: 100%;
 }
 @mixin Check-icon-transition {
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition-timing-function: cubic-bezier($ease-in-out-back);
     transition-duration: 1s;
     transform: rotate(-360deg);
 }
@@ -373,5 +373,5 @@
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spin 2s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    animation: spin 2s cubic-bezier($ease-in-out-back) infinite;
 }

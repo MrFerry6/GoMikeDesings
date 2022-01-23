@@ -634,8 +634,8 @@ header :first-child {
 }
 
 .menu-card:hover :nth-child(3) :nth-child(1) {
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-          transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-transform: rotate(-360deg);
