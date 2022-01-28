@@ -7,10 +7,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-a{
-    
-}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -651,11 +647,15 @@ h5,
 h6,
 p,
 label,
-.btn,
+.btn {
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #575757!important;
+}
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #fbfbfb!important;
+    color: #ffffff!important;
 }
 
 .container {
