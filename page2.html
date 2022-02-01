@@ -7,13 +7,20 @@
     <meta name="description" content="I'm Mike and your should hire me to build your website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/webp" href="favicon.webp">
-    <link rel="preload" as="font" href="fonts/et-line.woff">
-	<link rel="preload" as="font" href="fonts/fontawesome-webfont.woff2?v=4.7.0">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+    <link rel="preload" type="text/css" href="./css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./css/bootstrap.css"></noscript>
+	<link rel="preload" type="text/css" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="style.css"></noscript>
+	<link rel="preload" type="text/css" href="./css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./css/font-awesome.css"></noscript>
+	<link rel="preload" type="text/css" href="./css/et-line.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./css/et-line.css"></noscript>
+
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js" defer></script>
 	
     
 	<script src="./js/jquery-2.1.0.min.js"></script>
@@ -137,25 +144,36 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="index.html">
+								<span class="fa fa-twitter icon-md"></span>
+								<P class="text-center white">TWITTER</P>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-center">							
+							<a class="social" href="index.html">
+								<span class="fa fa-facebook icon-md"></span>
+								<P class="text-center white">FACEBOOK</P>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="index.html">
+								<span class="fa fa-dribbble icon-md"></span>
+							    <P class="text-center white">DRIBBBLE</P>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html">
+								<span class="fa fa-instagram icon-md"></span>
+								<P class="text-center white">INSTAGRAM</P>
+							</a>
 						</div>
 					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
