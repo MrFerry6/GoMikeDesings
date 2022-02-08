@@ -653,8 +653,9 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
-.a-color-index {
+.a-color-index-size {
     color: #ffffff!important;
+    font-size: 25px;
 }
 
 .container {
